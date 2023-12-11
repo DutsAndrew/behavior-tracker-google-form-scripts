@@ -23,18 +23,23 @@ const sendSummary = () => {
   return sendSummaryInEmail(summaryReport);
 };
 
+const getUsersToSendSummary = () => {
+  const userEmails = [
+    // ********************* Add emails of users that should be sent a reminder if form isn't completed, email should be in the [], with "" around it, followed by a comma ********************* //
+    "avdutson1@graniteschools.org",
+    "dutsandrew@gmail.com",
+  ];
+  return userEmails;
+};
+
 const sendSummaryInEmail = (summaryReport) => {
   const today = new Date();
   const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric'};
   const formattedDate = today.toLocaleString(undefined, options);
 
-  const recipients = [
-    // ************************ Add emails of users you want the summary to be sent to, email should be in the [], with "" around it, followed by a comma ************************ //
-    'avdutson1@graniteschools.org',
-    'dutsandrew@gmail.com',
-  ]
+  const usersToEmail = getUsersToSendSummary();
   
-  recipients.forEach((recipient) => {
+  usersToEmail.forEach((recipient) => {
     // ************************ Customize email subject line as needed, make sure text remains inside the ``; ************************ //
     const subject = `_______'s Tracker Summary for ${formattedDate} - Automated Email`;
 
