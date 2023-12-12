@@ -14,6 +14,25 @@
 
 <br>
 
+## What the automated emails look like:
+   <div align="center">
+      <h1>Remind Users Email</h1>
+      <p>All users in email list will get this same email if they haven't filled out the form yet</p>
+      <img 
+         width="1112" 
+         alt="Screen Shot 2023-12-11 at 17 44 28" 
+         src="https://github.com/DutsAndrew/behavior-tracker-google-form-scripts/assets/94728848/166c3db5-d7b2-4029-a135-3cb73679dd7e">
+   </div>
+
+   <div align="center">
+      <h1>Tracker Summary Email</h1>
+      <p>All users in email list will be sent the tracker results</p>
+      <img 
+         width="1113" 
+         alt="Screen Shot 2023-12-11 at 17 51 44" 
+         src="https://github.com/DutsAndrew/behavior-tracker-google-form-scripts/assets/94728848/7a0562ee-46f9-4447-b5fa-a3f1607bb263">
+   </div>
+
 ## How-To Setup:
 
 1. Open the editor for your Google Form. This should not be the view mode. You'll know because the end of the URL should be: ```/edit```
